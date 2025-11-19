@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FA11EN Search</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 30px;
+    }
+    .search-box {
+      width: 90%;
+      max-width: 500px;
+      display: flex;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      outline: none;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      background: #4444ff;
+      color: white;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3333cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>FA11EN</h1>
+  <form class="search-box" action="https://duckduckgo.com/" method="GET">
+    <input type="text" name="q" placeholder="Search with DuckDuckGo..." required />
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>
